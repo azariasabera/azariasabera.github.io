@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/frappe-charts@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="../../Images/chart.svg" class="logo">
+            <ul>
+                <li><a href="../../home.html">Home</a></li>
+                <li><a href="../../Employment/Map/index.html">Map On Employment</a></li>
+                <li><a href="../../Election/index.html">Election Results</a></li>
+            </ul>
+        </div> 
+
+        <div class="content">
+            <h1>Chart on Employment</h1>
+            <p>The chart shows the employment, unemployment and more data for different regions in Finland</p>
+            <p> Click below to go to the chart</p>
+        </div>
+        <div>
+            <img src="../../Images/arrowDown.svg" id="arrowDown">
+        </div>
+    </div>
+
+    <!-- For filtering municipalities -->
+    <div class="dropdown">
+        <label for="dropdownInput">Choose region</label>
+        <input type="text" class="dropdown-input" id="dropdownInput" name="inputMunicipality" placeholder="Whole Country">
+        <div class="dropdown-list" id="dropdownList"></div>
+    </div>
+
+    <div  id="holder">
+        <label for="selectData">Choose what to display</label>
+        <div id="selectionDiv">
+            <div class="checkbox-item">
+                <input type="checkbox" id="Employment" class="checkBox" value="11" checked>
+                <label for="11">Employment</label>
+            </div>
+        
+            <div class="checkbox-item">
+                <input type="checkbox" id="Unemployment" class="checkBox" value="12">
+                <label for="12">Unemployment</label>
+            </div>
+        
+            <div class="checkbox-item">
+                <input type="checkbox" id="LabourForce" class="checkBox" value="11+12">
+                <label for="11+12">Labour force</label>
+            </div>
+        
+            <div class="checkbox-item">
+                <input type="checkbox" id="Students" class="checkBox" value="22">
+                <label for="22">Students</label>
+            </div>
+        
+            <div class="checkbox-item">
+                <input type="checkbox" id="Pensioners" class="checkBox" value="24+29">
+                <label for="24+29">Pensioners</label>
+            </div>
+        
+            <div class="checkbox-item">
+                <input type="checkbox" id="Others" class="checkBox" value="99">
+                <label for="99">Others</label>
+            </div>
+        </div>        
+
+        <br>
+
+        <div>
+            <label for="selectGraph">Choose graph type</label>
+            <select id="selectGraph" name="selectGraph">
+                <option value="line">Line</option>
+                <option value="bar">Bar</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div id="chart"></div>
+    <button id="downloadChart">Download Chart as PNG</button>
+    
+</body>
+</html>

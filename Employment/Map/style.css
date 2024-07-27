@@ -1,0 +1,288 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Banner styles */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Logo styles */
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Arrow down icon styles */
+#arrowDown {
+    position: relative;
+    left: 45%;
+    right: 50%;
+    width: 10%;
+    margin-top: 5%;
+}
+
+/* Content styles */
+.content h1 {
+    font-size: 50px;
+    color: rgb(55, 231, 11);
+    text-align: center;
+    margin-top: 0px;
+}
+
+.content p {
+    font-size: 20px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #99e666;
+}
+
+/* Map container styling */
+#map {
+    height: 97vh;
+}
+
+/* Drag and Drop Area */
+.dragDropContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: auto;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    position: relative;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#dragArea {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 45%;
+    background-color: #ccc;
+    height: 200px;
+    border-radius: 10px;
+    border: 2px dashed #1518ea;
+}
+
+.card {
+    width: 25%;
+    height: 60px;
+    margin: 10px;
+    background-color: #adf18b;
+    border: 1px solid #1518ea;
+    border-radius: 5px;
+    cursor: move;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70%;
+}
+
+#dropArea {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 200px;
+    border: 2px dashed #1518ea;
+    border-radius: 10px;
+    background-color: #ccc;
+    margin-left: 10px;
+}
+
+.legend {
+    position: absolute;
+    top: 5px;
+    left: 70%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+#hide:hover {
+    background-color: #ff4500;
+}
+
+/* Radio button container */
+#radioDiv {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between radio buttons as needed */
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+}
+
+.radio-container input[type="radio"] {
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+/* Legend styling */
+.legend {
+    background: white;
+    line-height: 1.5;
+    padding: 6px 8px;
+    font: 14px/16px;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.legend div {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+
+/* Top bar styling */
+#topDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: hsl(132, 31%, 82%);
+    color: white;
+}
+
+.year-container {
+    display: flex;
+    align-items: center;
+}
+
+.year-container label {
+    margin-right: 10px;
+}
+
+#year {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+.drag-drop-container {
+    display: flex;
+    align-items: center;
+}
+
+.drag-drop-container img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.drag-drop-container label {
+    cursor: pointer;
+}
+
+#bottom {
+    border: 1px solid hsl(238, 84%, 46%);
+    border-radius: 5px;
+    background-color: hsl(138, 76%, 48%);
+    width: 20%;
+    height: 20%;
+}
+
+#topDiv label {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 80%;
+}
+
+/* Media Queries for Small Devices */
+@media (max-width: 600px) {
+    #chart {
+        overflow-x: scroll;
+        padding-bottom: 10px;
+    }
+
+    .dragDropContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    #dragArea, #dropArea {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 45%;
+        height: 50px;
+        margin: 5px;
+    }
+}

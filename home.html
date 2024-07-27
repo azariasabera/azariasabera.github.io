@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="home.js" defer></script>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="Images/home.svg" class="logo">
+            <ul>
+                <li><a href="Employment/Chart/index.html">Chart On Employment</a></li>
+                <li><a href="Employment/Map/index.html">Map On Employment</a></li>
+                <li><a href="Election/index.html">Party Elections</a></li>
+            </ul>
+        </div> 
+
+        <div class="content">
+            <h1>Welcome to the Data Visualization Site</h1>
+            <p> Currently there are two different data visualization tools available on this site. 
+                You can choose to view the data as a chart or as a map. 
+                The data is based on the statistics of Finland.
+            </p>
+        </div>
+
+        <div id="navigateDiv">
+            <div class="dropdown">
+                <button type="button" id="employment">Employment</button>
+                <div class="dropdown-content">
+                    <a href="Employment/Map/index.html">Map</a>
+                    <a href="Employment/Chart/index.html">Chart</a>
+                </div>
+            </div>
+            <button type="submit" id="elections">Elections</button>
+        </div>
+
+    </div>
+</body>
+</html>

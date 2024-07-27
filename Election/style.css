@@ -1,0 +1,194 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Banner styles */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('');
+    background-size: cover;
+    background-position: center;    
+}
+
+/* Logo styles */
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}   
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/* Arrow down icon styles */
+#arrowDown {
+    position: relative;
+    left: 45%;
+    right: 50%;
+    width: 10%;
+    margin-top: 5%;
+}
+
+/* Content styles */
+.content h1 {
+    font-size: 50px;
+    color: rgb(55, 231, 11);
+    text-align: center;
+    margin-top: 0px;
+}
+
+.content p {
+    font-size: 20px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the container to center content and add padding */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style for the holder1 and holder2 sections */
+.holder1, .holder2 {
+    margin-bottom: 20px;
+}
+
+
+/* Style for dropdowns and input fields */
+.dropdown, .chooseYears, .chooseParty {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="text"]:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
+/* Style the dropdown list */
+.dropdown-list {
+    display: none;
+    position: absolute;
+    width: calc(100% - 2px);
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-active .dropdown-list {
+    display: block;
+}
+
+.dropdown-list div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-list div:hover {
+    background-color: #cce8cc;
+}
+
+
+/* Style the button */
+button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #74c28f;
+}
+
+
+/* Style the chart container */
+#chart {
+    margin: 20px 0;
+}
+
+
+/* MEDIA QUERIES */
+
+/* For mobile phones: */
+@media only screen and (max-width: 600px) {
+    /* Select options limited to the width */
+    select {
+        width: 50%;
+        font-size: 70%;
+    }
+    /* Legend of the frappe chart reduced */
+    #chart {
+        overflow-x: scroll;
+        padding-bottom: 10px;
+    }
+}
